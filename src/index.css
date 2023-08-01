@@ -1,76 +1,47 @@
 body {
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-}
-
-#app {
-  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-
-#container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#navbar {
-  flex-grow: 1;
-  max-height: 10%;
-  min-height: 40px;
-  background-color: #222222;
-  color: white;
-  display: flex;
   align-items: center;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 }
 
-#navbar div {
+.header {
+  font-size: 40pt;
+  padding: 10px;
+  margin: auto;
+  max-width: 100px;
+}
+
+.search-container {
+  display: flex; 
+  justify-content: center; 
+  margin: auto;
+  max-width: 500px;
+}
+
+.search {
+  max-width: 100%;
   padding: 5px;
 }
 
-#colors-list {
+.cards {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  max-width: 500px; 
 }
 
-#colors-list div {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin-top: 40px;
-  transition: all 1s ease;
-}
-
-.selected {
-  border: 2px solid black;
-}
-
-/* colors */
-.red {
-  background-color: #cf000f;
-}
-.orange {
-  background-color: #eb6b56;
-}
-.yellow {
-  background-color: #ffc153;
-}
-.green {
-  background-color: #27ae60;
-}
-.blue {
-  background-color: #1d4fda;
-}
-.violet {
-  background-color: #462446;
-}
-.black {
-  background-color: #000000;
-}
-.white {
-  background-color: #ffffff;
+.card {
+  color: #242424;
+  width: auto;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: cyan;
+  cursor: pointer;
 }
